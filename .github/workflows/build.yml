@@ -29,6 +29,7 @@ jobs:
         git config user.name "GitHub Action"
         git config user.email "action@github.com"
         git checkout -b build-branch
-        git add .
+        git rm -r --cached node_modules
+        git add .output
         git commit -m "Add Nuxt build files"
         git push origin build-branch --force
