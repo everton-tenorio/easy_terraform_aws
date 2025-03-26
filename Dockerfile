@@ -7,4 +7,4 @@ RUN git clone --branch build-branch https://github.com/everton_tenorio/easy_terr
 
 EXPOSE 3000
 
-CMD ["node", ".output/server/index.mjs"]
+CMD ["node", "server/index.mjs"]
