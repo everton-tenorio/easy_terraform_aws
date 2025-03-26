@@ -32,6 +32,7 @@ jobs:
         git rm -rf .
         mv .output/* .
         rm -rf .output
+        rm -rf node_modules/
         git add .
         git commit -m "Add Nuxt build files"
         git push origin build-branch --force
