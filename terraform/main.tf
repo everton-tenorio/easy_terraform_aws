@@ -130,7 +130,7 @@ resource "aws_instance" "web" {
               cd /home/ubuntu/easy_terraform_aws
 
               # Baixar o tarball do Projeto
-              wget -O projeto.tar.gz "https://github.com/everton-tenorio/easy_terraform/releases/latest/download/projeto.tar.gz"
+              wget -O projeto.tar.gz "https://github.com/everton-tenorio/easy_terraform_aws/releases/download/build-13/projeto.tar.gz"
               tar -xzf projeto.tar.gz
 
               # Construir e rodar o container
