@@ -1,5 +1,7 @@
 # Nuxt Minimal Starter
 
+Terraform: A simple Nuxt 3 app deployed on AWS EC2 with Docker, and Nginx. 
+
 Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
