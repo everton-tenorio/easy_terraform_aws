@@ -24,11 +24,15 @@ jobs:
     - name: Build project
       run: npm run build
 
-    - name: Copy Dockerfile
+    - name: Copy Dockerfile to .output
       run: cp Dockerfile .output/
+
+    - name: Tar project
       run: tar -czf projeto.tar.gz -C .output/ .
-      - uses: actions/upload-artifact@v4
-        with:
-          name: projeto-tarball
-          path: projeto.tar.gz
+
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: projeto-tarball
+        path: projeto.tar.gz
 
